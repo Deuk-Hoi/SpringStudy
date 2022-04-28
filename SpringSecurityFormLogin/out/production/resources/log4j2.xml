@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <!-- Appenders -->
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-5p: %c - %m%n" />
+        </Console>
+    </Appenders>
+
+    <!-- Application Loggers -->
+    <Loggers>
+        <Logger name="com.springbook.biz" level="DEBUG" additivity="false">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.springframework.core" level="INFO" additivity="false">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.springframework.beans" level="DEBUG" additivity="false">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.springframework.context" level="DEBUG" additivity="false">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.springframework.web" level="DEBUG" additivity="false">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.springframework" level="DEBUG" additivity="false">
+            <AppenderRef ref="console" />
+        </Logger>
+    </Loggers>
+</Configuration>
