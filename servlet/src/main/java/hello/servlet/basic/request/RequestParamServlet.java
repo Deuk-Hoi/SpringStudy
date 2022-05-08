@@ -1,6 +1,5 @@
 package hello.servlet.basic.request;
 
-import sun.security.krb5.internal.PAData;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
